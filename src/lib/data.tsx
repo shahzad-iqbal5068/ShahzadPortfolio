@@ -17,7 +17,7 @@ import LogoNextjs from "/public/images/logos/icon-nextjs.svg";
 // Experience/Company Logos
 import LogoYns from "/public/images/logos/logo-yns.png";
 import LogoDaztech from "/public/images/logos/logo-daztech.jpg";
-import LogoAlgo3 from "../../public/images/logos/logo-algo3.png"; // ✅ Correct (Relative path)
+import LogoAlgo3 from "/public/images/logos/logo-algo3.jpg";
 import {
   ExperienceDetails,
   ProjectDetails,
