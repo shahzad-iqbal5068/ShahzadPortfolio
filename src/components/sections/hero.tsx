@@ -20,7 +20,8 @@ const HeroSection = () => {
               alt="Headshot of Shahzad"
               className="absolute z-10 h-[280px] w-[240px] border-8 border-gray max-md:left-5 md:left-0 md:top-0 md:h-[320px] md:w-[280px]"
               style={{ objectFit: "cover" }}
-            ></Image>
+              priority // ✅ FIX: Ensure the image is prioritized for loading
+            />
             <div className="absolute h-[280px] w-[280px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:right-0 md:h-[320px] md:w-[280px]"></div>
           </div>
         </div>
@@ -39,29 +40,27 @@ const HeroSection = () => {
               and responsive. Even though I have been creating web applications
               for over 3 years, I still love it as if it was something new.
             </Typography>
-            <Typography className="font-mono font-semibold text-emerald-500">
-              <Typewriter
-                options={{
-                  strings: [
-                    "Frontend Developer",
-                    "MERN Stack Developer",
-                    "React.js Developer",
-                    "Next.js Developer",
-                    "TypeScript Developer",
-                    "Node.js Developer",
-                    "Full Stack JavaScript Developer",
-                    "WordPress Developer",
-                    "Webflow Developer",
-                    "Dashboard & Web App Builder",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                  delay: 60,
-                  deleteSpeed: 40,
-                  cursor: "_",
-                }}
-              />
-            </Typography>
+            <Typewriter
+              options={{
+                strings: [
+                  "Frontend Developer",
+                  "MERN Stack Developer",
+                  "React.js Developer",
+                  "Next.js Developer",
+                  "TypeScript Developer",
+                  "Node.js Developer",
+                  "Full Stack JavaScript Developer",
+                  "WordPress Developer",
+                  "Webflow Developer",
+                  "Dashboard & Web App Builder",
+                ],
+                autoStart: true,
+                loop: true,
+                delay: 60,
+                deleteSpeed: 40,
+                cursor: "_",
+              }}
+            />
           </div>
           <div className="flex flex-col gap-2">
             <div className="flex gap-2">
