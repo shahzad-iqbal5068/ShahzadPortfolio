@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Ref :: https://twitter.com/steventey/status/1677339375645126659 */
 :root {
   --app-gray-default: 255 255 255;
@@ -31,4 +36,45 @@
   --app-gray-800: 243 244 246;
   --app-gray-900: 249 250 251;
   --app-gray-950: 255 255 255;
+}
+
+/* Carousel arrows - visible in light mode */
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(75 85 99) !important; /* gray-600 for light mode */
+  opacity: 1 !important;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: rgb(17 24 39) !important; /* gray-900 on hover */
+}
+
+/* Carousel dots - spacing from images */
+.slick-dots {
+  position: relative !important;
+  bottom: 0 !important;
+  margin-top: 2rem !important; /* 32px gap between carousel and dots */
+  padding-top: 1rem !important;
+}
+
+.slick-dots li button:before {
+  color: black !important;
+  font-size: 10px;
+  opacity: 1;
+}
+
+/* Dark mode */
+.dark .slick-dots li button:before {
+  color: white !important;
+}
+
+.dark .slick-prev:before,
+.dark .slick-next:before {
+  color: rgb(209 213 219) !important; /* gray-300 for dark mode */
+}
+
+.dark .slick-prev:hover:before,
+.dark .slick-next:hover:before {
+  color: white !important;
 }

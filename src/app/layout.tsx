@@ -1,8 +1,15 @@
 import Script from "next/script";
 import { Inter } from "next/font/google";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 
 import "./globals.css";
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ],
+};
 import Header from "@/components/layout/header";
 import { Providers } from "@/lib/providers";
 import Footer from "@/components/layout/footer";
@@ -25,10 +32,6 @@ export const metadata: Metadata = {
     "Next.js Developer",
   ],
   creator: "Choudhury Shahzad",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
   openGraph: {
     type: "website",
     url,

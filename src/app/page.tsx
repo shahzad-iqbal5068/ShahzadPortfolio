@@ -1,10 +1,11 @@
 import HeroSection from "@/components/sections/hero";
-import ContactSection from "@/components/sections/contact";
 import AboutMeSection from "@/components/sections/about-me";
 import SkillsSection from "@/components/sections/skills";
-import ExperienceSection from "@/components/sections/experiences";
-import TestimonialsSection from "@/components/sections/testimonials";
-import WorkSection from "@/components/sections/work";
+import ProjectsPreviewSection from "@/components/sections/projects-preview";
+import ExperiencePreviewSection from "@/components/sections/experience-preview";
+import FAQsSection from "@/components/sections/faqs";
+import TestimonialsMarqueeSection from "@/components/sections/testimonials-marquee";
+import ContactSection from "@/components/sections/contact";
 
 export default function Home() {
   return (
@@ -12,9 +13,10 @@ export default function Home() {
       <HeroSection />
       <AboutMeSection />
       <SkillsSection />
-      <ExperienceSection />
-      <WorkSection />
-      <TestimonialsSection />
+      <ProjectsPreviewSection />
+      <ExperiencePreviewSection />
+      <FAQsSection />
+      <TestimonialsMarqueeSection />
       <ContactSection />
     </>
   );
