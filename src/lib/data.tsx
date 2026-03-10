@@ -1,4 +1,4 @@
-import { Github, Twitter, Figma } from "lucide-react";
+import { Github, Twitter, Linkedin } from "lucide-react";
 
 // Project Images
 import ProjectWingie from "/public/images/project-wingie.png";
@@ -46,9 +46,7 @@ export const EXTERNAL_LINKS = {
   GITHUB: "https://github.com/shahzad-iqbal5068",
   GITHUB_REPO: "https://github.com/shahzad-iqbal5068",
   TWITTER: "https://twitter.com/shahzad_iqbal5068",
-  FIGMA: "https://www.figma.com/@shahsagarm",
-  FIGMA_FILE:
-    "https://www.figma.com/community/file/1262992249991763120/Personal-Portfolio-Website-Template-%7C-Mobile-%26-Desktop",
+  LINKEDIN: "https://linkedin.com/in/shahzad-iqbal-developer",
 };
 
 export const CONTACT_INFO = {
@@ -70,7 +68,7 @@ export const NAV_LINKS = [
 export const SOCIAL_LINKS = [
   { icon: Github, url: EXTERNAL_LINKS.GITHUB },
   { icon: Twitter, url: EXTERNAL_LINKS.TWITTER },
-  { icon: Figma, url: EXTERNAL_LINKS.FIGMA },
+  { icon: Linkedin, url: EXTERNAL_LINKS.LINKEDIN },
 ];
 
 export const TECHNOLOGIES: TechDetails[] = [

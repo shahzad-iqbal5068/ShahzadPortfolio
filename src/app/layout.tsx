@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: title,
     images: [
       {
-        url: "/images/open-graph-sagar.png",
+        url: "/images/open-graph.png",
       },
     ],
   },
@@ -48,8 +48,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    creator: "@shahsagarm",
-    images: "/images/open-graph-sagar.png",
+    creator: "@shahzad_iqbal5068",
+    images: "/images/open-graph.png",
   },
   icons: {
     icon: "/favicon.png",
